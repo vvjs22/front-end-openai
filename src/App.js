@@ -1,7 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import axios from "axios";
+
+// Components
+import Home from "./components/home/Home";
+
+// Data API
+import { generate } from "./front-end-openai/src/api/generate.js";
+
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
